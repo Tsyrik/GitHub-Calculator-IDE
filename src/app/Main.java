@@ -13,8 +13,7 @@ public class Main {
         printResult(add(a, b));
         printResult(multiply(a, b));
         printResult(subtraction(a, b));
-        double f = division(a, b);
-        System.out.println(f);
+        printResult(division(a, b));
     }
 
     private static int add(int a, int b) {
@@ -34,6 +33,10 @@ public class Main {
     }
 
     private static void printResult(int output) {
+        System.out.println(output);
+    }
+
+    private static void printResult(double output) {
         System.out.println(output);
     }
 }
