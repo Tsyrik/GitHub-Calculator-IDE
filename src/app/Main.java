@@ -10,12 +10,9 @@ public class Main {
         System.out.println("Version 1.0");
         a = 8;
         b = 2;
-        int c = add(a, b);
-        System.out.println(c);
-        int d = multiply(a, b);
-        System.out.println(d);
-        int e = subtraction(a, b);
-        System.out.println(e);
+        printResult(add(a, b));
+        printResult(multiply(a, b));
+        printResult(subtraction(a, b));
         double f = division(a, b);
         System.out.println(f);
     }
@@ -34,5 +31,9 @@ public class Main {
 
     private static double division(int a, int b) {
         return ((float) a) / b;
+    }
+
+    private static void printResult(int output) {
+        System.out.println(output);
     }
 }
